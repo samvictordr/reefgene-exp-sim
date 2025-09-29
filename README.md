@@ -15,16 +15,6 @@ A bioinformatics tool designed for marine genomics researchers studying cnidaria
 - **Interactive Volcano Plots**: Statistical significance visualization with log₂ fold-change thresholds
 - **Expression Heatmaps**: Hierarchical clustering of top differentially expressed genes (DEGs)
 
-## Scientific Background
-
-Coral reef ecosystems face unprecedented environmental challenges including ocean acidification, thermal stress, and pollution exposure. Understanding the molecular mechanisms underlying coral stress responses requires comprehensive transcriptomic profiling to identify key regulatory pathways and biomarker genes.
-
-This tool facilitates:
-- **Stress Response Genomics**: Analysis of differential gene expression between control and stress-exposed coral samples
-- **Biomarker Discovery**: Identification of candidate genes for environmental monitoring applications
-- **Pathway Enrichment Preparation**: Generation of gene lists suitable for downstream functional annotation
-- **Quality Control Assessment**: Sample clustering analysis for experimental validation
-
 ## Methodology
 
 ### Data Simulation Framework
@@ -160,60 +150,6 @@ The application generates several data products:
    - Volcano plot (HTML/SVG export compatible)
    - PCA biplot with variance statistics
    - Expression heatmap with clustering dendrograms
-
-## Biological Applications
-
-### Marine Stress Biology
-- **Thermal Stress Response**: Identification of heat shock proteins and chaperone genes
-- **Ocean Acidification Studies**: Analysis of calcification and pH homeostasis genes
-- **Pollution Exposure**: Detection of xenobiotic metabolism and detoxification pathways
-
-### Comparative Transcriptomics
-- **Species Comparisons**: Cross-species analysis of conserved stress responses
-- **Developmental Studies**: Temporal expression profiling during coral development
-- **Symbiosis Research**: Host-symbiont interaction transcriptomics
-
-### Biomarker Development
-- **Environmental Monitoring**: Selection of indicator genes for ecosystem health assessment
-- **Diagnostic Applications**: Development of molecular diagnostic assays
-- **Conservation Genomics**: Population-level transcriptomic monitoring
-
-## Technical Specifications
-
-### Algorithm Complexity
-- **Time Complexity**: O(n×m) where n = genes, m = samples
-- **Space Complexity**: O(n×m) for count matrix storage
-- **Scalability**: Optimized for datasets up to 50K genes × 1K samples
-
-### Statistical Assumptions
-- **Count Distribution**: Assumes Poisson-distributed read counts
-- **Independence**: Requires independent biological replicates
-- **Normality**: log₂CPM transformation improves normality for parametric tests
-
-## Limitations & Considerations
-
-1. **Simplified Model**: Uses t-test instead of more sophisticated methods (DESeq2, edgeR)
-2. **Single Factor Design**: Currently supports only two-group comparisons
-3. **No Batch Correction**: Does not account for technical batch effects
-4. **Pseudocount Addition**: May introduce bias for very low-count genes
-
-## Future Enhancements
-
-- Integration with established RNA-seq pipelines (DESeq2, limma-voom)
-- Multi-factor experimental design support
-- Gene set enrichment analysis (GSEA) functionality
-- Pathway visualization and annotation
-- Batch effect correction methods
-- Support for single-cell RNA-seq data
-
-## Citation
-
-If you use ReefGene-Exp-Sim in your research, please cite:
-
-```
-ReefGene-Exp-Sim: A Streamlit-based tool for coral transcriptome differential expression analysis
-GitHub: https://github.com/samvictordr/reefgene-exp-sim
-```
 
 ## License
 

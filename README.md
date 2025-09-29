@@ -1,10 +1,10 @@
-# ReefGene-Exp-Sim: Coral Transcriptome Differential Expression Analysis Suite
+# Coral Transcriptome Differential Expression Analysis Suite
 
 A comprehensive computational pipeline for simulating and analyzing coral reef transcriptomic responses to environmental stressors, implementing standardized RNA-seq differential expression workflows with interactive visualization capabilities.
 
 ## Overview
 
-ReefGene-Exp-Sim is a bioinformatics tool designed for marine genomics researchers studying cnidarian transcriptional responses to environmental perturbations. The application provides a complete analytical framework for coral gene expression profiling, incorporating established methodologies from the field of marine molecular ecology and transcriptomics.
+A bioinformatics tool designed for marine genomics researchers studying cnidarian transcriptional responses to environmental perturbations. The application provides a complete analytical framework for coral gene expression profiling, incorporating established methodologies from the field of marine molecular ecology and transcriptomics.
 
 ### Key Features
 
@@ -219,10 +219,3 @@ GitHub: https://github.com/samvictordr/reefgene-exp-sim
 
 This project is released under the Creative Commons CC0 1.0 Universal License - see the [LICENSE](LICENSE) file for details.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests to improve the tool's functionality for the marine genomics community.
-
-## Contact
-
-For questions, suggestions, or collaboration opportunities, please open an issue on the GitHub repository.
